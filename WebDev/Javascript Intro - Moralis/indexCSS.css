@@ -1,0 +1,14 @@
+table, th, td {
+    border: 1px solid black;
+  }
+
+th, td {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+.ticButton {
+    background-color: white;
+    padding: 10px 10px;
+  }

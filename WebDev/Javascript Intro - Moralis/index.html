@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Intro Playground</title>
+    <link rel="stylesheet" href="./indexCSS.css">
+    <script src="./TicTacToe.js"></script>
+</head>
+
+<body>
+
+    <h1>Tic-Tac-Toe</h1>
+    <h4>Instructions (2 Players)</h4>
+    <p style="width: 500px;">Take turns claiming a spot on the game board. 
+        Player 1 will be denoted by the letter X while Player 2 will be denoted by the letter O.</p> 
+    <p style="width: 500px;">A player wins if they can claim all three spots either horizontally, vertically, or diagonally. 
+        If the objective is not met before all spots are filled then the game results in a tie</p> 
+    
+    <!--Play Tic Tac Toe Button-->
+    <div style="padding-top: 25px; padding-bottom: 25px;">
+        <button id="playButton" style="background-color:lightgreen;" onclick="clearBoard()">Play Tic-Tac-Toe</button>
+        <p id="playerMsg"></p>
+    </div>
+
+    <!--HTML Gameboard-->
+    <p></p>
+    <table id="gameBoard" style="width:250px;">
+        <tr>
+            <td><button id="Tic1" class="ticButton" onclick="checkBoard('Tic1')" disabled></button></td>
+            <td><button id="Tic2" class="ticButton" onclick="checkBoard('Tic2')" disabled></button></td>
+            <td><button id="Tic3" class="ticButton" onclick="checkBoard('Tic3')" disabled></button></td>
+        </tr>
+        <tr>
+            <td><button id="Tic4" class="ticButton" onclick="checkBoard('Tic4')" disabled></button></td>
+            <td><button id="Tic5" class="ticButton" onclick="checkBoard('Tic5')" disabled></button></td>
+            <td><button id="Tic6" class="ticButton" onclick="checkBoard('Tic6')" disabled></button></td>
+        </tr>
+        <tr>
+            <td><button id="Tic7" class="ticButton" onclick="checkBoard('Tic7')" disabled></button></td>
+            <td><button id="Tic8" class="ticButton" onclick="checkBoard('Tic8')" disabled></button></td>
+            <td><button id="Tic9" class="ticButton" onclick="checkBoard('Tic9')" disabled></button></td>
+        </tr>
+      </table> 
+    
+</body>
+</html>
+
+
+
